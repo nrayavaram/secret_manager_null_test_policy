@@ -3,7 +3,7 @@ provider "google" {
 }
 
 resource "google_secret_manager_secret" "secret-basic" {
-  secret_id = "secret-wf-google-tf"
+  secret_id = "secret-wf-google-tf3"
   project      = "manifest-access-320809"
 
 
@@ -14,10 +14,10 @@ resource "google_secret_manager_secret" "secret-basic" {
   replication {
     user_managed {
       replicas {
-        location = "us-central1"
+        location = ""
       }
       replicas {
-        location = "europe-west1"
+        location = ""
       }
     }
   }
